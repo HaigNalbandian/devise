@@ -56,7 +56,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #f8f9fa; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -264,6 +264,9 @@ legend {
   line-height: inherit;
   color: inherit;
   white-space: normal; }
+  @media (max-width: 1200px) {
+    legend {
+      font-size: calc(1.275rem + 0.3vw) ; } }
 
 progress {
   vertical-align: baseline; }
@@ -304,15 +307,27 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.375rem; }
+  @media (max-width: 1200px) {
+    h1, .h1 {
+      font-size: calc(1.3625rem + 1.35vw) ; } }
 
 h2, .h2 {
   font-size: 1.9rem; }
+  @media (max-width: 1200px) {
+    h2, .h2 {
+      font-size: calc(1.315rem + 0.78vw) ; } }
 
 h3, .h3 {
   font-size: 1.6625rem; }
+  @media (max-width: 1200px) {
+    h3, .h3 {
+      font-size: calc(1.29125rem + 0.495vw) ; } }
 
 h4, .h4 {
   font-size: 1.425rem; }
+  @media (max-width: 1200px) {
+    h4, .h4 {
+      font-size: calc(1.2675rem + 0.21vw) ; } }
 
 h5, .h5 {
   font-size: 1.1875rem; }
@@ -328,21 +343,33 @@ h6, .h6 {
   font-size: 6rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-1 {
+      font-size: calc(1.725rem + 5.7vw) ; } }
 
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-2 {
+      font-size: calc(1.675rem + 5.1vw) ; } }
 
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-3 {
+      font-size: calc(1.575rem + 3.9vw) ; } }
 
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-4 {
+      font-size: calc(1.475rem + 2.7vw) ; } }
 
 hr {
   margin-top: 1rem;
@@ -394,7 +421,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #f8f9fa;
+  background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -2757,11 +2784,11 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px #f8f9fa, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
@@ -2893,8 +2920,8 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #f8f9fa;
-    border-color: #dee2e6 #dee2e6 #f8f9fa; }
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -3943,6 +3970,9 @@ input[type="button"].btn-block {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: .5; }
+  @media (max-width: 1200px) {
+    .close {
+      font-size: calc(1.2675rem + 0.21vw) ; } }
   .close:hover {
     color: #000;
     text-decoration: none; }
@@ -11336,6 +11366,22 @@ readers do not read off random characters that represent icons */
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
 
+/*!
+ * Font Awesome Free 5.8.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("./webfonts/fa-regular-400.eot");
+  src: url("./webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-regular-400.woff2") format("woff2"), url("./webfonts/fa-regular-400.woff") format("woff"), url("./webfonts/fa-regular-400.ttf") format("truetype"), url("./webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400; }
+
 .fa-1x {
   font-size: 0.9em !important; }
 
@@ -11346,9 +11392,8 @@ readers do not read off random characters that represent icons */
 
 #home-image {
   width: 120px;
-  height: 120px;
-  border: solid 5px white;
-  box-shadow: 0px 10px 7px -10px rgba(0, 0, 0, 0.6); }
+  border: solid 2px eggshell;
+  box-shadow: 0px 10px 7px -10px rgba(0, 0, 0, 0.9); }
 
 #nav-links {
   position: relative;
@@ -11373,22 +11418,25 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.4), rgba(51, 51, 51, 0.3), rgba(0, 0, 0, 0)); }
 
-h1, h2 {
+h1,
+h2 {
   letter-spacing: -0.085rem;
   font-weight: 700; }
 
-h3, h4 {
+h3,
+h4 {
   letter-spacing: -0.065rem;
   font-weight: 700; }
 
 p {
   margin-bottom: 0.7rem; }
 
-header h2 a, header h2 a:hover {
+header h2 a,
+header h2 a:hover {
   color: #212529; }
 
 img {
-  border-radius: 0.20rem; }
+  border-radius: 0.2rem; }
 
 h4 {
   margin-top: 2.2rem;
